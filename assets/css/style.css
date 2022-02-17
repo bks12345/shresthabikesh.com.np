@@ -1440,7 +1440,7 @@ section {
 }
 
 .card .card-title {
-  color: #000000;
+  color: #fff;
   margin-bottom: 0.625rem;
   text-transform: capitalize;
   font-size: 0.875rem;
@@ -1524,5 +1524,15 @@ section {
   padding-right: 3px;
   vertical-align: middle;
   font-size: .756em;
-  color: #405189
+  color: #fff;
+}
+.edu-card{
+  background-color: #000;
+}
+.edu-card-header {
+  background: #8c8c8c !important;
+  color: #fff !important;
+}
+.edu-card-body {
+  background: #cfcfcf;
 }
