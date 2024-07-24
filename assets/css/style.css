@@ -734,10 +734,11 @@ Portfolio Popup
     opacity: 0;
     transform: scale(.9);
 }
-.portfolio-popup.open .pp-content{
+.portfolio-popup.open .pp-content {
     opacity: 1;
     transform: scale(1);
     transition: all .5s ease;
+    margin-top: 20%;
 }
 .pp-header{
     position: relative;
