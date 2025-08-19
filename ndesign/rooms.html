@@ -1,0 +1,824 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Marketplace</title>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="assets/vendors/drift-zoom/drift-basic.css">
+      <link rel="stylesheet" href="assets/vendors/glightbox/glightbox.min.css">
+      <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet">
+   </head>
+   <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
+      <header id="header" class="header position-relative">
+         <div class="top-bar py-2 d-none d-lg-block">
+            <div class="container-fluid container-xl">
+               <div class="row align-items-center">
+                  <div class="col-lg-6">
+                     <div class="d-flex align-items-center">
+                        <div class="top-bar-item me-4">
+                           <i class="bi bi-telephone-fill me-2"></i>
+                           <span>Customer Support: </span>
+                           <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                        <div class="top-bar-item">
+                           <i class="bi bi-envelope-fill me-2"></i>
+                           <a href="mailto:support@example.com">support@example.com</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="d-flex justify-content-end">
+                        <div class="top-bar-item me-4">
+                           <a href="#">
+                           <i class="bi bi-truck me-2"></i>Track Order
+                           </a>
+                        </div>
+                        <div class="top-bar-item dropdown me-4">
+                           <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                           <i class="bi bi-translate me-2"></i>English
+                           </a>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-check2 me-2 selected-icon"></i>English</a></li>
+                              <li><a class="dropdown-item" href="#">Español</a></li>
+                              <li><a class="dropdown-item" href="#">Français</a></li>
+                              <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                           </ul>
+                        </div>
+                        <div class="top-bar-item dropdown">
+                           <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                           <i class="bi bi-currency-dollar me-2"></i>USD
+                           </a>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-check2 me-2 selected-icon"></i>USD</a></li>
+                              <li><a class="dropdown-item" href="#">EUR</a></li>
+                              <li><a class="dropdown-item" href="#">GBP</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main-header">
+            <div class="container-fluid container-xl">
+               <div class="d-flex py-3 align-items-center justify-content-between">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                     <h1 class="sitename">Hamro<span>Bazaar</span></h1>
+                  </a>
+                  <form class="search-form desktop-search-form">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products...">
+                        <button class="btn search-btn" type="submit">
+                        <i class="bi bi-search"></i>
+                        </button>
+                     </div>
+                  </form>
+                  <div class="header-actions d-flex align-items-center justify-content-end">
+                     <button class="header-action-btn mobile-search-toggle d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+                     <i class="bi bi-search"></i>
+                     </button>
+                     <div class="dropdown account-dropdown">
+                        <button class="header-action-btn" data-bs-toggle="dropdown">
+                        <i class="bi bi-person"></i>
+                        <span class="action-text d-none d-md-inline-block">Account</span>
+                        </button>
+                        <div class="dropdown-menu">
+                           <div class="dropdown-header">
+                              <h6>Welcome to <span class="sitename">HamroBazaar</span></h6>
+                              <p class="mb-0">Access account &amp; manage orders</p>
+                           </div>
+                           <div class="dropdown-body">
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-person-circle me-2"></i>
+                              <span>My Profile</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-bag-check me-2"></i>
+                              <span>My Orders</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-heart me-2"></i>
+                              <span>My Wishlist</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-arrow-return-left me-2"></i>
+                              <span>Returns &amp; Refunds</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-gear me-2"></i>
+                              <span>Settings</span>
+                              </a>
+                           </div>
+                           <div class="dropdown-footer">
+                              <a href="#" class="btn btn-primary w-100 mb-2">Sign In</a>
+                              <a href="#" class="btn btn-outline-primary w-100">Register</a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="header-action-btn d-none d-md-flex">
+                     <i class="bi bi-heart"></i>
+                     <span class="action-text d-none d-md-inline-block">Wishlist</span>
+                     <span class="badge">0</span>
+                     </a>
+                     <div class="dropdown cart-dropdown">
+                        <button class="header-action-btn" data-bs-toggle="dropdown">
+                        <i class="bi bi-cart3"></i>
+                        <span class="action-text d-none d-md-inline-block">Cart</span>
+                        <span class="badge">3</span>
+                        </button>
+                        <div class="dropdown-menu cart-dropdown-menu">
+                           <div class="dropdown-header">
+                              <h6>Shopping Cart (3)</h6>
+                           </div>
+                           <div class="dropdown-body">
+                              <div class="cart-items">
+                                 <div class="cart-item">
+                                    <div class="cart-item-image">
+                                       <img src="assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                                    </div>
+                                    <div class="cart-item-content">
+                                       <h6 class="cart-item-title">Wireless Headphones</h6>
+                                       <div class="cart-item-meta">1 x $89.99</div>
+                                    </div>
+                                    <button class="cart-item-remove">
+                                    <i class="bi bi-x"></i>
+                                    </button>
+                                 </div>
+                                 <div class="cart-item">
+                                    <div class="cart-item-image">
+                                       <img src="assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                                    </div>
+                                    <div class="cart-item-content">
+                                       <h6 class="cart-item-title">Smart Watch</h6>
+                                       <div class="cart-item-meta">1 x $129.99</div>
+                                    </div>
+                                    <button class="cart-item-remove">
+                                    <i class="bi bi-x"></i>
+                                    </button>
+                                 </div>
+                                 <div class="cart-item">
+                                    <div class="cart-item-image">
+                                       <img src="assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                                    </div>
+                                    <div class="cart-item-content">
+                                       <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                                       <div class="cart-item-meta">1 x $59.99</div>
+                                    </div>
+                                    <button class="cart-item-remove">
+                                    <i class="bi bi-x"></i>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-footer">
+                              <div class="cart-total">
+                                 <span>Total:</span>
+                                 <span class="cart-total-price">$279.97</span>
+                              </div>
+                              <div class="cart-actions">
+                                 <a href="#" class="btn btn-outline-primary">View Cart</a>
+                                 <a href="#" class="btn btn-primary">Checkout</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="post-ad">
+                        <a href="post-ad.html">Post Ad</a>
+                     </div>
+                     <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-nav">
+            <div class="container-fluid container-xl position-relative">
+               <nav id="navmenu" class="navmenu">
+                  <ul>
+                     <li><a href="index.html" class="active">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Category</a></li>
+                     <li><a href="#">Product Details</a></li>
+                     <li><a href="#">Cart</a></li>
+                     <li><a href="#">Checkout</a></li>
+                     <li class="products-megamenu-1">
+                        <a href="#"><span>Megamenu 1</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul class="mobile-megamenu">
+                           <li><a href="#">Featured Products</a></li>
+                           <li><a href="#">New Arrivals</a></li>
+                           <li><a href="#">Sale Items</a></li>
+                           <li class="dropdown">
+                              <a href="#"><span>Clothing</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                              <ul>
+                                 <li><a href="#">Men's Wear</a></li>
+                                 <li><a href="#">Women's Wear</a></li>
+                                 <li><a href="#">Kids Collection</a></li>
+                                 <li><a href="#">Sportswear</a></li>
+                                 <li><a href="#">Accessories</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown">
+                              <a href="#"><span>Electronics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                              <ul>
+                                 <li><a href="#">Smartphones</a></li>
+                                 <li><a href="#">Laptops</a></li>
+                                 <li><a href="#">Audio Devices</a></li>
+                                 <li><a href="#">Smart Home</a></li>
+                                 <li><a href="#">Accessories</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown">
+                              <a href="#"><span>Home &amp; Living</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                              <ul>
+                                 <li><a href="#">Furniture</a></li>
+                                 <li><a href="#">Decor</a></li>
+                                 <li><a href="#">Kitchen</a></li>
+                                 <li><a href="#">Bedding</a></li>
+                                 <li><a href="#">Lighting</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown">
+                              <a href="#"><span>Beauty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                              <ul>
+                                 <li><a href="#">Skincare</a></li>
+                                 <li><a href="#">Makeup</a></li>
+                                 <li><a href="#">Haircare</a></li>
+                                 <li><a href="#">Fragrances</a></li>
+                                 <li><a href="#">Personal Care</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                        <div class="desktop-megamenu">
+                           <div class="megamenu-tabs">
+                              <ul class="nav nav-tabs" id="productMegaMenuTabs" role="tablist">
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured-content-1862" type="button" aria-selected="true" role="tab">Featured</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">New Arrivals</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">Sale</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">Categories</button>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="megamenu-content tab-content">
+                              <div class="tab-pane fade show active" id="featured-content-1862" role="tabpanel" aria-labelledby="featured-tab">
+                                 <div class="product-grid">
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-1.webp" alt="Featured Product" loading="lazy">
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Premium Headphones</h5>
+                                          <p class="price">$129.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-2.webp" alt="Featured Product" loading="lazy">
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Smart Watch</h5>
+                                          <p class="price">$199.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-3.webp" alt="Featured Product" loading="lazy">
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Wireless Earbuds</h5>
+                                          <p class="price">$89.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-4.webp" alt="Featured Product" loading="lazy">
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Bluetooth Speaker</h5>
+                                          <p class="price">$79.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="new-content-1862" role="tabpanel" aria-labelledby="new-tab">
+                                 <div class="product-grid">
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-5.webp" alt="New Arrival" loading="lazy">
+                                          <span class="badge-new">New</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Fitness Tracker</h5>
+                                          <p class="price">$69.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-6.webp" alt="New Arrival" loading="lazy">
+                                          <span class="badge-new">New</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Wireless Charger</h5>
+                                          <p class="price">$39.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-7.webp" alt="New Arrival" loading="lazy">
+                                          <span class="badge-new">New</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Smart Bulb Set</h5>
+                                          <p class="price">$49.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-8.webp" alt="New Arrival" loading="lazy">
+                                          <span class="badge-new">New</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Portable Power Bank</h5>
+                                          <p class="price">$59.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="sale-content-1862" role="tabpanel" aria-labelledby="sale-tab">
+                                 <div class="product-grid">
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-9.webp" alt="Sale Product" loading="lazy">
+                                          <span class="badge-sale">-30%</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Wireless Keyboard</h5>
+                                          <p class="price"><span class="original-price">$89.99</span> $62.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-10.webp" alt="Sale Product" loading="lazy">
+                                          <span class="badge-sale">-25%</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Gaming Mouse</h5>
+                                          <p class="price"><span class="original-price">$59.99</span> $44.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-11.webp" alt="Sale Product" loading="lazy">
+                                          <span class="badge-sale">-40%</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>Desk Lamp</h5>
+                                          <p class="price"><span class="original-price">$49.99</span> $29.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                    <div class="product-card">
+                                       <div class="product-image">
+                                          <img src="assets/img/product/product-12.webp" alt="Sale Product" loading="lazy">
+                                          <span class="badge-sale">-20%</span>
+                                       </div>
+                                       <div class="product-info">
+                                          <h5>USB-C Hub</h5>
+                                          <p class="price"><span class="original-price">$39.99</span> $31.99</p>
+                                          <a href="#" class="btn-view">View Product</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="category-content-1862" role="tabpanel" aria-labelledby="category-tab">
+                                 <div class="category-grid">
+                                    <div class="category-column">
+                                       <h4>Clothing</h4>
+                                       <ul>
+                                          <li><a href="#">Men's Wear</a></li>
+                                          <li><a href="#">Women's Wear</a></li>
+                                          <li><a href="#">Kids Collection</a></li>
+                                          <li><a href="#">Sportswear</a></li>
+                                          <li><a href="#">Accessories</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="category-column">
+                                       <h4>Electronics</h4>
+                                       <ul>
+                                          <li><a href="#">Smartphones</a></li>
+                                          <li><a href="#">Laptops</a></li>
+                                          <li><a href="#">Audio Devices</a></li>
+                                          <li><a href="#">Smart Home</a></li>
+                                          <li><a href="#">Accessories</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="category-column">
+                                       <h4>Home &amp; Living</h4>
+                                       <ul>
+                                          <li><a href="#">Furniture</a></li>
+                                          <li><a href="#">Decor</a></li>
+                                          <li><a href="#">Kitchen</a></li>
+                                          <li><a href="#">Bedding</a></li>
+                                          <li><a href="#">Lighting</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="category-column">
+                                       <h4>Beauty</h4>
+                                       <ul>
+                                          <li><a href="#">Skincare</a></li>
+                                          <li><a href="#">Makeup</a></li>
+                                          <li><a href="#">Haircare</a></li>
+                                          <li><a href="#">Fragrances</a></li>
+                                          <li><a href="#">Personal Care</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li><a href="contact.html">Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="announcement-bar py-2">
+            <div class="container-fluid container-xl">
+               <div class="announcement-slider swiper init-swiper swiper-initialized swiper-vertical swiper-backface-hidden">
+                  <script type="application/json" class="swiper-config">
+                     {
+                       "loop": true,
+                       "speed": 600,
+                       "autoplay": {
+                         "delay": 5000
+                       },
+                       "slidesPerView": 1,
+                       "effect": "slide",
+                       "direction": "vertical"
+                     }
+                  </script>
+                  <div class="swiper-wrapper" id="swiper-wrapper-10123f252c836e3b2" aria-live="off" style="transition-duration: 0ms; transform: translate3d(0px, -72px, 0px); transition-delay: 0ms;">
+                     <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" data-swiper-slide-index="1" style="height: 24px;">💰 30 days money back guarantee</div>
+                     <div class="swiper-slide" role="group" aria-label="3 / 4" data-swiper-slide-index="2" style="height: 24px;">🎁 20% off on your first order - Use code: FIRST20</div>
+                     <div class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 4" data-swiper-slide-index="3" style="height: 24px;">⚡ Flash Sale! Up to 70% off on selected items</div>
+                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0" style="height: 24px;">🚚 Free shipping on orders over $50</div>
+                  </div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+               </div>
+            </div>
+         </div>
+         <div class="collapse" id="mobileSearch">
+            <div class="container">
+               <form class="search-form">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search for products...">
+                     <button class="btn search-btn" type="submit">
+                     <i class="bi bi-search"></i>
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="post-ad-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <form class="post-form">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="title" class="form-label">Title<span class="text-danger">*</span></label>
+                                 <input type="text" id="title" class="form-control" placeholder="Enter Title">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="category" class="form-label">Category<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Category">
+                                    <option selected>Select Category</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="subcategory" class="form-label">Sub-Category<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Subcategory">
+                                    <option selected>Select Sub Category</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="rooms" class="form-label">Rooms<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Rooms">
+                                    <option selected>Select Rooms</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="upload photos" class="form-label">Upload Photos<span class="text-danger">*</span></label>
+                                 <label class="upload-box d-block mb-4">
+                                    <input type="file" multiple hidden>
+                                    <i class="bi bi-plus-lg"></i> <!-- + ICON -->
+                                    <p class="mb-0">Add Photos or drag and drop</p>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="prices" class="form-label">Your Prices<span class="text-danger">*</span></label>
+                                 <div class="row g-3">
+                                    <div class="col-md-4">
+                                       <select class="form-select">
+                                          <option selected>Fixed Price</option>
+                                          <option value="1">Negotiable</option>
+                                          <option value="2">Auction</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <input type="number" class="form-control" placeholder="Enter Your Price">
+                                    </div>
+                                    <div class="col-md-4">
+                                       <input type="number" class="form-control" placeholder="Minimum Offer Price">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="sharing basis" class="form-label">Sharing Basis<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Sharing Basis">
+                                    <option selected>Sharing Basis</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="furnishing" class="form-label">Furnishing<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Furnishing">
+                                    <option selected>Furnishing</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="bathroom" class="form-label">Bathroom<span class="text-danger">*</span></label>
+                                 <select class="form-select" aria-label="Bathroom">
+                                    <option selected>Bathroom</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="smoking" class="form-label">Smoking<span class="text-danger">*</span></label>
+                                 <div class="btn-group w-100 " role="group" aria-label="Smoking options">
+                                    <input type="radio" class="btn-check" name="smoking" id="smokingYes" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-50" for="smokingYes">Yes</label>
+                                    <input type="radio" class="btn-check" name="smoking" id="smokingNo" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-50" for="smokingNo">No</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="mb-3">
+                                 <label for="pet" class="form-label">Pet Friendly<span class="text-danger">*</span></label>
+                                 <div class="btn-group w-100" role="group" aria-label="pet options">
+                                    <input type="radio" class="btn-check" name="pet" id="petYes" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-50" for="petYes">Yes</label>
+                                    <input type="radio" class="btn-check" name="pet" id="petNo" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-50" for="petNo">No</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="title" class="form-label">Available Date<span class="text-danger">*</span></label>
+                                 <input type="date" class="form-control" name="date" id="date" placeholder="Available Date">
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="mb-3">
+                                 <label for="title" class="form-label">Description<span class="text-danger">*</span></label>
+                                 <textarea name="Description" class="form-control" id="" ></textarea>
+                              </div>
+                           </div>
+                           <div class="mt-3">
+                              <h5 class="custom-title">Your Details</h5>
+                              <div class="mb-3">
+                                 <label for="contactName" class="custom-label">Contact Name <span class="text-danger">*</span></label>
+                                 <input type="text" class="form-control custom-input" id="contactName" value="Bikesh Shrestha" placeholder="Enter your name">
+                              </div>
+                              <div class="mb-3">
+                                 <label for="businessLocation" class="custom-label">Business Location <span class="text-danger">*</span></label>
+                                 <input type="text" class="form-control custom-input mb-2" id="businessLocation" value="Canberra St, Bowen QLD 4805, Australia">
+                                 <div class="form-check d-flex align-items-center p-0">
+                                    <i class="bi bi-geo-alt custom-icon me-2"></i>
+                                    <label class="form-check-label" for="useLocation">Use My Current Location</label>
+                                 </div>
+                                 <small class="custom-text">Location will appear in search results, on your live ad, and emails to potential buyers.</small>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="phoneNumber" class="custom-label">Phone Number</label>
+                                 <input type="tel" class="form-control custom-input" id="phoneNumber" placeholder="Enter Phone Number">
+                              </div>
+                              <div class="form-check form-switch mb-4">
+                                 <input class="form-check-input" type="checkbox" id="showNumber">
+                                 <label class="form-check-label" for="showNumber">Show my number on the ad</label>
+                              </div>
+                              <button class="btn btn-primary w-100 custom-btn">Post Ad</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section-box box-newsletter">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-md-7 col-sm-12">
+                     <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+                     <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+                  </div>
+                  <div class="col-lg-4 col-md-5 col-sm-12">
+                     <div class="box-form-newsletter mt-15">
+                        <form class="form-newsletter">
+                           <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
+                           <button class="btn btn-brand-2">Sign Up</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+     <footer id="footer" class="footer light-background">
+         <div class="footer-main">
+            <div class="container">
+               <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo">
+                        <span class="sitename">Hamro Bazaar</span>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula, facilisis magna ut, consectetur lorem. Proin eget tortor risus.</p>
+                        <div class="social-links mt-4">
+                           <h5>Connect With Us</h5>
+                           <div class="social-icons">
+                              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                              <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                              <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Shop</h4>
+                        <ul class="footer-links">
+                           <li><a href="#">New Arrivals</a></li>
+                           <li><a href="#">Bestsellers</a></li>
+                           <li><a href="#">Categories</a></li>
+                           <li><a href="#">Cars</a></li>
+                           <li><a href="#">Accessories</a></li>
+                           <li><a href="#">Sale</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                           <li><a href="#">Help Center</a></li>
+                           <li><a href="#">Order Status</a></li>
+                           <li><a href="#">Shipping Info</a></li>
+                           <li><a href="#">Returns &amp; Exchanges</a></li>
+                           <li><a href="#">Size Guide</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                           <div class="contact-item">
+                              <i class="bi bi-geo-alt"></i>
+                              <span>New Baneshwor, Kathmandu, Nepal</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-telephone"></i>
+                              <span>++977-98412345678</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-envelope"></i>
+                              <span>hello@example.com</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-clock"></i>
+                              <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                           </div>
+                        </div>
+                        <div class="app-buttons mt-4">
+                           <a href="#" class="app-btn">
+                           <i class="bi bi-apple"></i>
+                           <span>App Store</span>
+                           </a>
+                           <a href="#" class="app-btn">
+                           <i class="bi bi-google-play"></i>
+                           <span>Google Play</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="row gy-3 align-items-center">
+                  <div class="col-lg-6 col-md-12">
+                     <div class="copyright">
+                        <p>© <span>Copyright</span> <strong class="sitename">Hamro Bazaar</strong>. All Rights Reserved.</p>
+                     </div>
+                     <div class="credits mt-1">
+                        Designed & Developed by <a href="#">HamroBazaar</a>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                     <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+                        <div class="payment-methods">
+                           <div class="payment-icons">
+                              <i class="bi bi-credit-card" aria-label="Credit Card"></i>
+                              <i class="bi bi-paypal" aria-label="PayPal"></i>
+                              <i class="bi bi-apple" aria-label="Apple Pay"></i>
+                              <i class="bi bi-google" aria-label="Google Pay"></i>
+                              <i class="bi bi-cash" aria-label="Cash on Delivery"></i>
+                           </div>
+                        </div>
+                        <div class="legal-links">
+                           <a href="#">Terms</a>
+                           <a href="#">Privacy</a>
+                           <a href="#">Cookies</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendors/aos/aos.js"></script>
+      <script src="assets/vendors/drift-zoom/drift.min.js"></script>
+      <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendors/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+      <script src="assets/vendors/imageload/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
