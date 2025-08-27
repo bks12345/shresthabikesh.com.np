@@ -10989,10 +10989,7 @@ button.btn.btn-outline-primary.buy-now-btn {
     margin-left: 40px;
     width: 100%;
 }
-.btn-check:focus+.btn-outline-primary, .btn-outline-primary:focus {
-    box-shadow: 0 0 0 .25rem rgb(13 110 253 / 0%);
-}
-form.post-form h3 {
+.post-form h3 {
     color: #fff;
     color: #fff;
     text-align: center;
@@ -11001,4 +10998,7 @@ form.post-form h3 {
     background: #425a8b;
     padding: 10px;
     font-size: 22px;
+}
+.btn-check:focus+.btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: 0 0 0 .25rem rgb(13 110 253 / 0%);
 }
